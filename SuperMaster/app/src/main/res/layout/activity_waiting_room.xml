@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond_menus_bleu"
+    android:gravity="center"
+    tools:context="jtb.supermaster.Serveur.Waiting_room">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#3AFFFFFF"
+        android:id="@+id/listeJoueurs">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="En attente de joueurs..."
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/lancerPartie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Lancer la partie!"
+        android:visibility="gone"/>
+
+</LinearLayout>

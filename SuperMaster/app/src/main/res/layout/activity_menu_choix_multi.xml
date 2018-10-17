@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fond_menus_bleu"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/layoutAction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:gravity="center">
+
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/Ligne"
+                    android:text="En ligne"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dip"
+                    android:gravity="center"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/Local"
+                    android:text="En local"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dip"
+                    android:gravity="center"
+                    />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

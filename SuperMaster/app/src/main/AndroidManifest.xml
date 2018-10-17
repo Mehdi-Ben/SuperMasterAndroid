@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jtb.supermaster">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Menus.Menu_principal"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Mini_Jeux.Enigmes_a_resoudre"
+            android:screenOrientation="portrait"
+
+            />
+        <activity
+            android:name=".Mini_Jeux.Couleur_a_trouver"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Mini_Jeux.ArrowGame"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Mini_Jeux.Jeu_pustules"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Mini_Jeux.Point_connection"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Menus.Menu_libre"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Mini_Jeux.Basket"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Modes.Mode_classique"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Menus.Score"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Modes.Mode_multijoueurs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Serveur.Connexion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Modes.Mode_contreLaMontre"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Serveur.Waiting_room"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Serveur.Super_master_config"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Menus.Regles"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Menus.Menu_Choix_Multi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Menus.Menu_Multi_IA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Menus.Pause"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Modes.Mode_courseAuxPoints"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Serveur.Fin_de_partie"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

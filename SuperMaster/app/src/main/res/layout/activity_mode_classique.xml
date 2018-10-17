@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="9"
+    android:background="@drawable/fond_menus_bleu"
+    >
+
+    <TextView
+        android:id="@+id/Time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prêt ?"
+        android:gravity="center_horizontal"
+        android:textSize="80sp"
+        android:paddingTop="100sp"
+        android:layout_weight="3"
+        />
+
+    <TextView
+        android:text="Voulez-vous rejouer ?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textReplay"
+        android:layout_weight="1.02"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:src="@drawable/button_oui"
+        android:onClick="onClickReplay"
+        android:id="@+id/replay"
+        android:layout_weight="3"
+        android:padding="15dp"
+        android:layout_margin="5dp"
+        android:scaleX="0.75"
+        android:scaleY="0.75" />
+
+    <ImageView
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:src="@drawable/bouton_non"
+        android:onClick="onClickQuit"
+        android:id="@+id/quit"
+        android:layout_weight="3"
+        android:padding="15dp"
+        android:layout_margin="5dp"
+        android:scaleX="0.75"
+        android:scaleY="0.75" />
+
+</LinearLayout>
+
+</LinearLayout>
+
+
+
+
+

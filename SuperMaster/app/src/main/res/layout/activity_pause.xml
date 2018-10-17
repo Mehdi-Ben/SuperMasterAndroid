@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="jtb.supermaster.Menus.Menu_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/fond_menus_bleu">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_pause"
+        android:layout_margin="75dp"
+        android:adjustViewBounds="true" />
+
+
+    <ImageView
+        android:src="@drawable/buton_reprendre"
+        android:scaleType="fitCenter"
+        android:layout_width="220dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/boutonQuitter"
+        android:onClick="onClickResume" />
+
+
+
+    <ImageView
+        android:src="@drawable/buton_quitter"
+        android:scaleType="fitCenter"
+        android:layout_width="220dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/boutonQuitter"
+        android:onClick="onClickQuit"
+        android:id="@+id/boutonQuitter" />
+
+
+    <!--
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="320dp"
+        android:layout_height="232dp"
+        android:gravity="center"
+        >
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:padding="3dp">
+
+    <TextView
+            android:text="Mode Libre"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/ModeLibre"
+            android:gravity="center"
+            android:background="@drawable/boutonvideversion3" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:padding="3dp">
+
+    <TextView
+        android:text="Mode Classique"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:id="@+id/ModeClassique"
+        android:gravity="center"
+        android:background="@drawable/boutonvideversion3" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:padding="3dp">
+
+            <TextView
+                android:text="Mode Multijoueur"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:id="@+id/ModeMulti"
+                android:gravity="center"
+                android:background="@drawable/boutonvideversion3" />
+
+            </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:padding="3dp">
+
+        <TextView
+            android:text="Meilleurs Scores"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/MScores"
+            android:gravity="center"
+            android:background="@drawable/boutonvideversion3" />
+
+            </TableRow>
+
+
+
+    </TableLayout>
+
+    -->
+
+</LinearLayout>

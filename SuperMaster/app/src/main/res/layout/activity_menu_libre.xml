@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="jtb.supermaster.Menus.Menu_libre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fond_menus_bleu">
+
+    <RelativeLayout
+        android:id="@+id/layoutPrincFinPartie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:background="@drawable/fond_menus_bleu"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Game Over\n\nVous avez obtenu"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:paddingTop="20dp"
+                android:layout_weight="1"
+                android:id="@+id/TextScore" />
+
+            <TextView
+                android:id="@+id/Textpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 points"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/TextReplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Voulez-vous rejouer ?"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:layout_weight="1"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:onClick="onClickReplay"
+                    android:src="@drawable/button_oui"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <ImageView
+                    android:id="@+id/quit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:onClick="onClickQuit"
+                    android:src="@drawable/bouton_non"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/LayooutLibre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="110"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="visible">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:layout_gravity="left"
+                android:onClick="onClickMenuPrincipal"
+                android:src="@drawable/bouton_menu" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"></View>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:id="@+id/FlechesTexte"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:text="Fleches"
+                     />
+
+                <ImageView
+                    android:id="@+id/Fleches"
+                    android:layout_width="230dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="80"
+
+                    android:layout_gravity="center"
+                    android:onClick="onClickFleche"
+                    android:padding="4dp"
+                    android:src="@drawable/fond_fleches_modelibre_plusbordures" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:id="@+id/EnigmesTexte"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:text="Enigmes"
+                     />
+
+
+                <ImageView
+                    android:id="@+id/Enigmes"
+                    android:layout_width="230dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="80"
+                    android:layout_gravity="center"
+                    android:onClick="onClickEnigme"
+                    android:padding="4dp"
+                    android:src="@drawable/fond_enigmes_menulibre_plusbordures" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:id="@+id/CouleursTexte"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:text="Couleurs"
+                     />
+
+
+                <ImageView
+                    android:id="@+id/Couleurs"
+                    android:layout_width="230dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="80"
+                    android:layout_gravity="center"
+                    android:onClick="onClickCouleur"
+                    android:padding="4dp"
+                    android:src="@drawable/fond_couleurs_menulibre_plusbordures" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+
+
+                <TextView
+                    android:id="@+id/BasketTexte"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:text="Basket"
+                     />
+
+
+                <ImageView
+                    android:id="@+id/Basket"
+                    android:layout_width="230dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="80"
+                    android:layout_gravity="center"
+                    android:onClick="onClickBasket"
+                    android:padding="4dp"
+                    android:src="@drawable/fond_basket_menulibre_plusbordures" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:orientation="horizontal"
+            android:padding="5dp"
+
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:id="@+id/DemineurTexte"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:text="Demineur"
+                     />
+
+
+                <ImageView
+                    android:id="@+id/Demineur"
+                    android:layout_width="230dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="80"
+                    android:layout_gravity="center"
+                    android:onClick="onClickDemineur"
+                    android:padding="4dp"
+                    android:src="@drawable/fond_demineur_menulibre_plusbordures" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+
+
+                <TextView
+                    android:id="@+id/EtoilesTexte"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:text="Asteroide"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/Points"
+                    android:layout_width="230dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="80"
+                    android:layout_gravity="center"
+                    android:onClick="onClickPoint"
+                    android:padding="4dp"
+                    android:src="@drawable/fond_etoiles_menulibre_plusbordures" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+

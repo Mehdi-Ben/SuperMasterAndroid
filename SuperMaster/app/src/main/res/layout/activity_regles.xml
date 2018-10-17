@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="jtb.supermaster.Menus.Regles"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond_menus_bleu"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/TitreActivity"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/regles_des_jeux_logo"
+            android:layout_alignParentTop="true"/>
+
+        <RelativeLayout
+            android:layout_below ="@+id/TitreActivity"
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TitreEnigme"
+                    android:text="Jeu des enigmes"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:background="#99FFFFFF"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:id="@+id/ReglesEnigme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TitreEnigme"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="#99FFFFFF"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:textSize="20dp"
+                    android:text="Inclinez votre téléphone afin de sélectionner une réponse. Ensuite, appuyez sur l'écran pour valider votre choix."/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="30dp"
+                    android:src="@drawable/fond_enigmes_menulibre"
+                    android:alpha="0.2"
+                    android:layout_alignTop="@+id/ReglesEnigme"
+                    android:layout_alignLeft="@+id/ReglesEnigme"
+                    android:layout_alignRight="@+id/ReglesEnigme"
+                    android:layout_alignBottom="@+id/ReglesEnigme"
+                    android:gravity="center"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/intercallaire1"
+            android:layout_below="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></View>
+
+        <RelativeLayout
+            android:layout_below ="@+id/intercallaire1"
+            android:id="@+id/LayoutBaskets"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TitreBaskets"
+                    android:text="Jeu du basket"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:background="#99FFFFFF"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/ReglesBasket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TitreBaskets"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="#99FFFFFF"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:textSize="20dp"
+                    android:text="Inclinez votre téléphone dans la direction du panier afin d'ajuster votre tir. Ensuite, cliquez sur l'écran pour lancer le ballon."/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="30dp"
+                    android:src="@drawable/ballon"
+                    android:alpha="0.2"
+                    android:layout_alignTop="@+id/ReglesBasket"
+                    android:layout_alignLeft="@+id/ReglesBasket"
+                    android:layout_alignRight="@+id/ReglesBasket"
+                    android:layout_alignBottom="@+id/ReglesBasket"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/intercallaire2"
+            android:layout_below="@+id/LayoutBaskets"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></View>
+
+        <RelativeLayout
+            android:layout_below ="@+id/intercallaire2"
+            android:id="@+id/LayoutAsteroid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TitreAsteroid"
+                    android:text="Jeu des asteroides"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:background="#99FFFFFF"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/ReglesAsteroid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TitreAsteroid"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="#99FFFFFF"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:textSize="20dp"
+                    android:text="Reliez les astéroïdes dans l'ordre ! Si vous débarassez toute la galaxie de ses astéroÏdes, vous gagnez le point."/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/asteroid"
+                    android:alpha="0.2"
+                    android:layout_alignTop="@+id/ReglesAsteroid"
+                    android:layout_alignLeft="@+id/ReglesAsteroid"
+                    android:layout_alignRight="@+id/ReglesAsteroid"
+                    android:layout_alignBottom="@+id/ReglesAsteroid"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/intercallaire3"
+            android:layout_below="@+id/LayoutAsteroid"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></View>
+
+        <RelativeLayout
+            android:layout_below ="@+id/intercallaire3"
+            android:id="@+id/LayoutCouleur"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TitreCouleur"
+                    android:text="Jeu des couleurs"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:background="#99FFFFFF"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/ReglesCouleur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TitreCouleur"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="#99FFFFFF"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:textSize="20dp"
+                    android:text="Cliquez sur le mot écrit dans la couleur correspondante! Par exemple : ' Rose ' écrit en rose."/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fond_couleurs_menulibre"
+                    android:padding="30dp"
+                    android:alpha="0.2"
+                    android:layout_alignTop="@+id/ReglesCouleur"
+                    android:layout_alignLeft="@+id/ReglesCouleur"
+                    android:layout_alignRight="@+id/ReglesCouleur"
+                    android:layout_alignBottom="@+id/ReglesCouleur"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/intercallaire4"
+            android:layout_below="@+id/LayoutCouleur"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></View>
+
+        <RelativeLayout
+            android:layout_below ="@+id/intercallaire4"
+            android:id="@+id/LayoutDemineur"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TitreDemineur"
+                    android:text="Jeu du demineur"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:background="#99FFFFFF"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/ReglesDemineur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TitreDemineur"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="#99FFFFFF"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:textSize="20dp"
+                    android:text="Faites exploser les bombes bleues et noires en les touchant du doigt. Attention ! Ne touchez pas les bombes rouges."/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="30dp"
+                    android:src="@drawable/fond_demineur_menulibre"
+                    android:alpha="0.2"
+                    android:layout_alignTop="@+id/ReglesDemineur"
+                    android:layout_alignLeft="@+id/ReglesDemineur"
+                    android:layout_alignRight="@+id/ReglesDemineur"
+                    android:layout_alignBottom="@+id/ReglesDemineur"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/intercallaire5"
+            android:layout_below="@+id/LayoutDemineur"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></View>
+
+        <RelativeLayout
+            android:layout_below ="@+id/intercallaire5"
+            android:id="@+id/LayoutFleches"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TitreFleches"
+                    android:text="Jeu des fleches"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:background="#99FFFFFF"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/ReglesFleches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TitreFleches"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="#99FFFFFF"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:textSize="20dp"
+                    android:text="Effectuez un glissement dans l'une des quatre directions qui ne sont pas affichées sur l'écran"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="30dp"
+                    android:src="@drawable/fond_fleches_modelibre"
+                    android:alpha="0.2"
+                    android:layout_alignTop="@+id/ReglesFleches"
+                    android:layout_alignLeft="@+id/ReglesFleches"
+                    android:layout_alignRight="@+id/ReglesFleches"
+                    android:layout_alignBottom="@+id/ReglesFleches"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/LayoutFleches"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"></View>
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond_menus_bleu"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="jtb.supermaster.Serveur.Super_master_config">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#00D6EAF8"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="30"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back" />
+
+
+        <ImageView
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:layout_below="@+id/boutonQuitter"
+            android:gravity="center"
+            android:src="@mipmap/img_configuration" />
+
+
+
+    </LinearLayout> <!-- 10 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/boutonClassique"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:background="#00FF00"
+            android:gravity="center"
+            android:text="Course aux Points"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/boutonQuitter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:text="Contre la Montre"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reglageTempsClM"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:gravity="center_vertical"
+            android:text="Temps Total"
+            android:id="@+id/TpsTotal"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:orientation="horizontal"
+            android:weightSum="90">
+
+            <ImageView
+                android:id="@+id/flecheHautTemps"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:background="@drawable/arrows"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/NbTempsSuper"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="36sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/flecheBasTemps"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:background="@drawable/downarrow"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reglagePointsChrono"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/nbViesConfig"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:gravity="center_vertical"
+            android:text="Points  Total"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:orientation="horizontal"
+            android:weightSum="90">
+
+            <ImageView
+                android:id="@+id/flecheHautPoints"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:background="@drawable/arrows"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/NbPointsSuper"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="36sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/flecheBasPoints"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:background="@drawable/downarrow"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout> <!-- 10 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/nbDifficulte"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:gravity="center_vertical"
+            android:text="Difficulte  de  Depart"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:orientation="horizontal"
+            android:weightSum="90">
+
+            <ImageView
+                android:id="@+id/flecheHautDiff"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:background="@drawable/arrows"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/NbDiffSuper"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="36sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/flecheBasDiff"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:background="@drawable/downarrow"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout> <!-- 15 -->
+
+    <!-- 15 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:paddingTop="5sp"
+            android:gravity="center"
+            android:src="@mipmap/img_choix_minijeu" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/FlechesTexte"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:gravity="center"
+                        android:text="Fleches"
+                        android:textSize="15sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="80"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/Fleches"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="#000000"
+                            android:onClick="onClickFleche"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/fond_fleches_modelibre_plusbordures" />
+
+                        <TextView
+                            android:id="@+id/valideFleche"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignEnd="@+id/Fleches"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center"
+                            android:background="#CCF5F5F5"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="40sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/EnigmesTexte"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:gravity="center"
+                        android:text="Enigmes"
+                        android:textSize="15sp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="80"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/Enigmes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="#000000"
+                            android:onClick="onClickFleche"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/fond_enigmes_menulibre_plusbordures" />
+
+                        <TextView
+                            android:id="@+id/valideEnigme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignEnd="@+id/Enigmes"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center"
+                            android:background="#CCF5F5F5"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="40sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+
+                    <TextView
+                        android:id="@+id/CouleursTexte"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:gravity="center"
+                        android:text="Couleurs"
+                        android:textSize="15sp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="80"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/Couleurs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="#000000"
+                            android:onClick="onClickFleche"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/fond_couleurs_menulibre_plusbordures" />
+
+                        <TextView
+                            android:id="@+id/valideCouleurs"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignEnd="@+id/Couleurs"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center"
+                            android:background="#CCF5F5F5"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="40sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:orientation="horizontal"
+                android:weightSum="90">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/BasketTexte"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:gravity="center"
+                        android:text="Basket" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="80"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/Basket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="#000000"
+                            android:onClick="onClickBasket"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/fond_basket_menulibre_plusbordures" />
+
+                        <TextView
+                            android:id="@+id/valideBasket"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignEnd="@+id/Basket"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center"
+                            android:background="#CCF5F5F5"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="40sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/DemineurTexte"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:gravity="center"
+                        android:text="Demineur" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="80"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/Demineur"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="#000000"
+                            android:onClick="onClickDemineur"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/fond_demineur_menulibre_plusbordures" />
+
+                        <TextView
+                            android:id="@+id/valideDemineur"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignEnd="@+id/Demineur"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center"
+                            android:background="#CCF5F5F5"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="40sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/EtoilesTexte"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:gravity="center"
+                        android:text="Asteroides" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="80"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/Points"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="#000000"
+                            android:onClick="onClickPoint"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/fond_etoiles_menulibre_plusbordures" />
+
+                        <TextView
+                            android:id="@+id/valideEtoiles"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignEnd="@+id/Points"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center"
+                            android:background="#CCF5F5F5"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="40sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout> <!-- 40 -->
+
+    <TextView
+        android:id="@+id/Valider"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="10"
+        android:paddingTop="15dp"
+        android:text="VALIDER"
+        android:textSize="20sp" /> <!-- 10 -->
+
+</LinearLayout>

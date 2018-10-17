@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jtb.supermaster.Serveur.Fin_de_partie"
+    android:gravity="center"
+    android:background="@drawable/fond_menus_bleu"
+    android:weightSum="5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/victoire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:layout_weight="0.42"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/gagnant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="0.42" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/tableauScores"
+        android:layout_weight="0.42">
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Voulez-vous rejouer ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_weight="0.42"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.42">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/button_oui"
+            android:layout_margin="0dp"
+            android:onClick="onClickResume"
+            android:padding="20dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:layout_weight="0.5" />
+
+        <ImageView
+            android:id="@+id/quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onClickQuit"
+            android:src="@drawable/bouton_non"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:padding="20dp"
+            android:layout_margin="0dp"
+            android:layout_weight="0.5" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/fond_menus_jaune"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scaleType="center"
+    tools:context="jtb.supermaster.Menus.Score">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/meilleur_score_logo"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#00FFFFFF"
+            android:gravity="center"
+            android:weightSum="7.5"
+            android:scrollbarSize="10dp"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:background="#00FFFFFF"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="6"
+                android:layout_weight="0.75"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/local"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Local"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:fontFamily="Helsinki"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Meilleur\nScore"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/meilleurScore"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:text="Rang"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rang"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:background="#00FFFFFF"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="6"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tbasket"
+                    android:layout_gravity="center"
+                    android:text="Basket"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/basket"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:fontFamily="Helsinki"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/mbasket"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rbasket"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:background="#00FFFFFF"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="6"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tenigmes"
+                    android:layout_gravity="center"
+                    android:text="Enigmes"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/enigmes"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:fontFamily="Helsinki"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/menigmes"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/renigmes"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:background="#00FFFFFF"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="6"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tdemineur"
+                    android:layout_gravity="center"
+                    android:text="Demineur"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/demineur"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:fontFamily="Helsinki"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/mdemineur"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rdemineur"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:background="#00FFFFFF"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="6"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tcouleurs"
+                    android:layout_gravity="center"
+                    android:text="Couleur"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/couleurs"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:fontFamily="Helsinki"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/mcouleurs"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rcouleurs"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:background="#00FFFFFF"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="6"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tpoints"
+                    android:layout_gravity="center"
+                    android:text="Asteroide"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/points"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:fontFamily="Helsinki"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/mpoints"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rpoints"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:background="#00FFFFFF"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="6"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tfleches"
+                    android:layout_gravity="center"
+                    android:text="Fleches"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/fleches"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:fontFamily="Helsinki"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/mfleches"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rfleches"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:background="#00FFFFFF"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="6"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tclassique"
+                    android:layout_gravity="center"
+                    android:text="Classique"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/classique"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:fontFamily="Helsinki"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/mclassique"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rclassique"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

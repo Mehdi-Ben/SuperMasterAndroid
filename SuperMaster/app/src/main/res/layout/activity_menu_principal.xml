@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="jtb.supermaster.Menus.Menu_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="110"
+    android:background="@drawable/fond_menus_bleu"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_weight="3.69">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vibration"
+            android:id="@+id/vibrations"
+            android:onClick="onClickVibrations"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible"
+            android:layout_toStartOf="@+id/sonMusique" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/son_musique"
+            android:id="@+id/sonMusique"
+            android:onClick="onClickMusic"
+            android:visibility="invisible"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/son" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/son2"
+            android:id="@+id/son"
+            android:visibility="invisible"
+            android:onClick="onClickSound"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/parametres" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/parametre"
+            android:id="@+id/parametres"
+            android:onClick="onClickParametres"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/son" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/boutonQuitter"
+        android:gravity="center"
+        android:src="@drawable/logo_v2"
+        android:layout_weight="30"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:layout_height="0dp" />
+
+
+    <ImageView
+        android:src="@drawable/bouton_classique"
+        android:scaleType="centerInside"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/boutonQuitter"
+        android:onClick="onClickClassique"
+        android:id="@+id/boutonClassique"
+        android:layout_weight="15"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="85dp"
+        android:adjustViewBounds="false"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:cropToPadding="true" />
+
+
+        <ImageView
+            android:src="@drawable/buton_libre"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/boutonQuitter"
+            android:onClick="onClickLibre"
+            android:id="@+id/boutonQuitter"
+            android:layout_weight="15"
+            android:layout_marginLeft="85dp"
+            android:layout_marginRight="85dp"
+            android:adjustViewBounds="false"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:cropToPadding="true" />
+
+
+        <ImageView
+            android:src="@drawable/bouton_multijoueur"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:onClick="onClickMultijoueur"
+            android:layout_weight="15"
+            android:layout_marginLeft="85dp"
+            android:layout_marginRight="85dp"
+            android:adjustViewBounds="false"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:cropToPadding="true" />
+
+        <ImageView
+            android:src="@drawable/bouton_records"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:onClick="onClickScore"
+            android:layout_weight="15"
+            android:layout_marginLeft="85dp"
+            android:layout_marginRight="85dp"
+            android:adjustViewBounds="false"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:cropToPadding="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:src="@drawable/reseau_problem"
+                android:scaleType="fitCenter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="onClickConnect"
+                android:id="@+id/logoConnection"
+                android:paddingRight="95dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:src="@drawable/regles2"
+                android:scaleType="fitCenter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="onClickRules"
+                android:paddingLeft="95dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+    <!--
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="320dp"
+        android:layout_height="232dp"
+        android:gravity="center"
+        >
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:padding="3dp">
+
+    <TextView
+            android:text="Mode Libre"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/ModeLibre"
+            android:gravity="center"
+            android:background="@drawable/boutonvideversion3" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:padding="3dp">
+
+    <TextView
+        android:text="Mode Classique"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:id="@+id/ModeClassique"
+        android:gravity="center"
+        android:background="@drawable/boutonvideversion3" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:padding="3dp">
+
+            <TextView
+                android:text="Mode Multijoueur"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:id="@+id/ModeMulti"
+                android:gravity="center"
+                android:background="@drawable/boutonvideversion3" />
+
+            </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:padding="3dp">
+
+        <TextView
+            android:text="Meilleurs Scores"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/MScores"
+            android:gravity="center"
+            android:background="@drawable/boutonvideversion3" />
+
+            </TableRow>
+
+
+
+    </TableLayout>
+
+    -->
+
+    </LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fond_menus_bleu"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/layoutAction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/boutonQuitter"
+                    android:gravity="center"
+                    android:src="@drawable/choix_difficulte_ia" />
+
+                </TableRow>
+
+            <TableRow
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:gravity="center">
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dip"
+                    android:gravity="center"
+                    />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/IAFacile"
+                    android:text="Facile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dip"
+                    android:gravity="center"
+                    />
+
+                </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/IAMoyen"
+                    android:text="Moyen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dip"
+                    android:gravity="center"
+                    />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/IADifficile"
+                    android:text="Difficile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dip"
+                    android:gravity="center"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:gravity="center">
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dip"
+                    android:gravity="center"
+                    />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/Valider"
+                    android:text="Valider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dip"
+                    android:gravity="center"
+                    />
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
